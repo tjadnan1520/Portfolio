@@ -555,6 +555,11 @@ body {
     color: var(--secondary-color);
 }
 
+.contact .container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .contact .section-title {
     color: var(--white);
 }
@@ -572,6 +577,7 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 .contact-item h3 {

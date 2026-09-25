@@ -3,322 +3,789 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarek Jamil Adnan - Software Engineer</title>
+    <title>Tarek Jamil Adnan — Software Engineer &amp; AI/ML Enthusiast</title>
+    <meta name="description" content="Tarek Jamil Adnan — Software Engineering student at IIT, University of Dhaka. Full-stack developer and AI/ML enthusiast. Hackathon finalist at SUST CSE Carnival, top 15 of 724 teams.">
+    <meta name="author" content="Tarek Jamil Adnan">
+    <meta name="theme-color" content="#05070e">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tarek Jamil Adnan — Software Engineer">
+    <meta property="og:description" content="Full-stack developer &amp; AI/ML enthusiast at IIT, University of Dhaka. SUST CSE Carnival hackathon finalist — top 15 of 724 teams.">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Icon sprite ===== -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+        <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.2 6.8 7.6 5.1a2.2 2.2 0 0 0 2.4 0l7.6-5.1"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3h2.9l1.5 4-2 1.5a12.4 12.4 0 0 0 5.5 5.5l1.5-2 4 1.5v2.9a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.2c0 5.8-8 11.8-8 11.8s-8-6-8-11.8a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.8"/></symbol>
+        <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h10V9a5 5 0 0 1-10 0z"/><path d="M17 5h2.6a2.6 2.6 0 0 1-2.6 4.6"/><path d="M7 5H4.4A2.6 2.6 0 0 0 7 9.6"/><path d="M12 14v3.2"/><path d="M8.6 21h6.8l-.7-3.8H9.3z"/></symbol>
+        <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.4"/><path d="m8.2 13.4-1.4 7.1 5.2-2.7 5.2 2.7-1.4-7.1"/></symbol>
+        <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3.4 2.65 5.4 5.95.86-4.3 4.2 1.02 5.94L12 17l-5.32 2.8 1.02-5.94-4.3-4.2 5.95-.86z"/></symbol>
+        <symbol id="i-zap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13.2 2 4.8 13.4h6.2l-1 8.6 8.4-11.4h-6.2z"/></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12h14.5"/><path d="m13 6 6 6-6 6"/></symbol>
+        <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19.5V5"/><path d="m6 11 6-6 6 6"/></symbol>
+        <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.2 16.8 16.8 7.2"/><path d="M8.6 7.2h8.2v8.2"/></symbol>
+        <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.2"/><path d="M15 5.6A2.6 2.6 0 0 0 12.4 3h-7A2.4 2.4 0 0 0 3 5.4v7A2.6 2.6 0 0 0 5.6 15"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.6 4.6L19 7.5"/></symbol>
+        <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 5 7 7-7 7"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8.4-4.1 3.6 4.1 3.6"/><path d="m15.6 8.4 4.1 3.6-4.1 3.6"/><path d="m13.6 5-3.2 14"/></symbol>
+        <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.8" rx="7.6" ry="3"/><path d="M4.4 5.8v12.4c0 1.66 3.4 3 7.6 3s7.6-1.34 7.6-3V5.8"/><path d="M4.4 12c0 1.66 3.4 3 7.6 3s7.6-1.34 7.6-3"/></symbol>
+        <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.6" y="4.6" width="14.8" height="14.8" rx="2.6"/><rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1"/><path d="M9 2v2.6M15 2v2.6M9 19.4V22M15 19.4V22M2 9h2.6M2 15h2.6M19.4 9H22M19.4 15H22"/></symbol>
+        <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.6 6.2a4.1 4.1 0 0 1 5.2 5.2l-1.7-1.7-2.2.4-.4-2.2z"/><path d="M17.4 9.4 7.6 19.2a2.2 2.2 0 0 1-3.1-3.1l9.8-9.8"/></symbol>
+        <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.6A1.6 1.6 0 0 1 5.6 3H20v16.4H5.6A1.6 1.6 0 0 0 4 21z"/><path d="M8.4 7.6h7.2M8.4 11h5.4"/></symbol>
+        <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8.4 12 4.2l9.4 4.2-9.4 4.2z"/><path d="M6.6 10.4v5c0 1.5 2.4 2.7 5.4 2.7s5.4-1.2 5.4-2.7v-5"/><path d="M21.4 8.4v5.6"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.2 20a5.8 5.8 0 0 1 11.6 0"/><path d="M16.4 5.2a3.2 3.2 0 0 1 0 5.9"/><path d="M17.4 14.4A5.8 5.8 0 0 1 20.8 20"/></symbol>
+        <symbol id="i-flask" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9.6 3v5.2L4.8 17a2.2 2.2 0 0 0 1.9 3.4h10.6a2.2 2.2 0 0 0 1.9-3.4l-4.8-8.8V3"/><path d="M8.2 3h7.6"/><path d="M7.4 14.4h9.2"/></symbol>
+        <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="7" width="18.8" height="13" rx="2.5"/><path d="M8.6 7V5.6A2 2 0 0 1 10.6 3.6h2.8a2 2 0 0 1 2 2V7"/><path d="M2.6 12.4h18.8"/></symbol>
+        <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.6" width="14" height="15.8" rx="2.2"/><path d="M9 4.6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v.6"/><path d="M9 11h6M9 15h4"/></symbol>
+        <symbol id="i-globe" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3.2 12h17.6"/><path d="M12 3a15 15 0 0 1 0 18 15 15 0 0 1 0-18z"/></symbol>
+        <symbol id="i-shield" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 5 5.6v5.7c0 4.2 2.9 8.1 7 9.3 4.1-1.2 7-5.1 7-9.3V5.6z"/><path d="m9.2 11.8 2 2 3.8-3.8"/></symbol>
+        <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4.4"/><circle cx="12" cy="12" r=".9"/></symbol>
+        <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M11 2.2 12.7 8l5.8 1.7-5.8 1.7L11 17.2 9.3 11.4 3.5 9.7 9.3 8z"/><path d="M18.4 13.4 19.3 16l2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.8S3.2 15.6 3.2 9.9A4.9 4.9 0 0 1 12 6.6a4.9 4.9 0 0 1 8.8 3.3c0 5.7-8.8 10.9-8.8 10.9z"/></symbol>
+    </svg>
+
+    <!-- ===== Ambient backdrop ===== -->
+    <div class="backdrop" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+    </div>
+
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">TJA</div>
+            <a class="nav-brand" href="index.html">
+                <span class="mark">TJA</span>
+                <span>Tarek Jamil Adnan<span class="sub">Software Engineer</span></span>
+            </a>
+
             <ul class="nav-links">
-                <li><a href="#hero">Home</a></li>
+                <li><a href="#hero" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <a class="nav-cta" href="contact.html">
+                    Let's talk
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+                    <span class="bars"><span></span><span></span><span></span></span>
+                </button>
+            </div>
         </div>
+        <span class="nav-progress" id="navProgress" aria-hidden="true"></span>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Tarek Jamil Adnan</span></h1>
-                <p class="hero-subtitle">Software Engineering Student</p>
-                <p class="hero-description">
-                    I'm passionate about becoming a proficient Full Stack Developer and exploring the exciting possibilities of Artificial Intelligence. Currently studying Software Engineering at the Institute of Information Technology, University of Dhaka, with a strong focus on building scalable applications and innovative AI solutions.
-                </p>
-                <div class="social-links">
-                    <a href="https://github.com/tjadnan1520" target="_blank" class="social-link">
-                        <span class="social-icon">🔗</span>
-                        GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/tjadnan" target="_blank" class="social-link">
-                        <span class="social-icon">💼</span>
-                        LinkedIn
-                    </a>
-                    <a href="mailto:bsse1520@iit.du.ac.bd" class="social-link">
-                        <span class="social-icon">✉️</span>
-                        Email
-                    </a>
+    <div class="nav-backdrop" id="navBackdrop" hidden></div>
+    <aside class="nav-drawer" id="navDrawer" aria-label="Mobile navigation" aria-hidden="true">
+        <p class="drawer-title">Navigate</p>
+        <ul>
+            <li><a href="#hero">Home <span class="num">01</span></a></li>
+            <li><a href="#about">About <span class="num">02</span></a></li>
+            <li><a href="#experience">Experience <span class="num">03</span></a></li>
+            <li><a href="#projects">Projects <span class="num">04</span></a></li>
+            <li><a href="#skills">Skills <span class="num">05</span></a></li>
+            <li><a href="#achievements">Achievements <span class="num">06</span></a></li>
+            <li><a href="#contact">Contact <span class="num">07</span></a></li>
+        </ul>
+        <div class="drawer-foot">
+            <a class="icon-btn" href="https://github.com/tjadnan1520" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/tjadnan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            </a>
+            <a class="icon-btn" href="mailto:bsse1520@iit.du.ac.bd" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>
+            </a>
+        </div>
+    </aside>
+
+    <main id="main">
+
+        <!-- ===== Hero ===== -->
+        <section id="hero" class="hero section">
+            <div class="container">
+                <div class="hero-grid">
+
+                    <div class="hero-copy">
+                        <span class="status-pill reveal">
+                            <span class="dot" aria-hidden="true"></span>
+                            Open for <b>collaboration</b>
+                        </span>
+
+                        <h1 class="hero-title">
+                            <span class="line reveal">Hi, I'm</span>
+                            <span class="line grad-text reveal">Tarek Jamil Adnan</span>
+                        </h1>
+
+                        <p class="role-line reveal">
+                            <span>I build things as</span>
+                            <span class="role-text" id="roleText">Full-Stack Developer</span><span class="caret" aria-hidden="true"></span>
+                            <span class="sr-only">Full-Stack Developer, AI/ML Enthusiast, and Algorithm Explorer.</span>
+                        </p>
+
+                        <p class="hero-lede reveal">
+                            Software Engineering student at <strong>Institute of Information Technology, University of Dhaka</strong>.
+                            I design and ship <strong>full-stack web applications</strong>, train <strong>machine-learning models</strong> from
+                            scratch, and love turning messy problems into clean, working systems.
+                        </p>
+
+                        <div class="hero-actions reveal">
+                            <a class="btn btn-primary" href="#projects">
+                                Explore my work
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                            </a>
+                            <a class="btn btn-ghost" href="contact.html">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>
+                                Get in touch
+                            </a>
+                        </div>
+
+                        <div class="hero-social reveal">
+                            <span class="label">Find me on</span>
+                            <a class="icon-btn" href="https://github.com/tjadnan1520" target="_blank" rel="noopener" aria-label="GitHub">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                            </a>
+                            <a class="icon-btn" href="https://www.linkedin.com/in/tjadnan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                            </a>
+                            <button class="icon-btn" data-copy="bsse1520@iit.du.ac.bd" aria-label="Copy email address">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Code window -->
+                    <div class="codewin reveal">
+                        <div class="codewin-bar">
+                            <span class="codewin-dots" aria-hidden="true"><i></i><i></i><i></i></span>
+                            <span class="fname">profile.ts</span>
+                            <span class="live"><span class="dot" aria-hidden="true"></span>online</span>
+                        </div>
+                        <pre class="codewin-body"><code><span class="cl"><span class="tk-key">const</span> <span class="tk-fn">developer</span> <span class="tk-pun">=</span> <span class="tk-pun">{</span></span><span class="cl">  <span class="tk-prop">name</span><span class="tk-pun">:</span> <span class="tk-str">"Tarek Jamil Adnan"</span><span class="tk-pun">,</span></span><span class="cl">  <span class="tk-prop">role</span><span class="tk-pun">:</span> <span class="tk-str">"Full-Stack &amp; AI/ML"</span><span class="tk-pun">,</span></span><span class="cl">  <span class="tk-prop">university</span><span class="tk-pun">:</span> <span class="tk-str">"IIT, Univ. of Dhaka"</span><span class="tk-pun">,</span></span><span class="cl">  <span class="tk-prop">cgpa</span><span class="tk-pun">:</span> <span class="tk-num">3.66</span><span class="tk-pun">,</span> <span class="tk-com">// 5th sem</span></span><span class="cl">  <span class="tk-prop">stack</span><span class="tk-pun">:</span> <span class="tk-pun">[</span><span class="tk-str">"React"</span><span class="tk-pun">,</span> <span class="tk-str">"Node"</span><span class="tk-pun">,</span> <span class="tk-str">"PyTorch"</span><span class="tk-pun">],</span></span><span class="cl">  <span class="tk-prop">hackathon</span><span class="tk-pun">:</span> <span class="tk-pun">{</span></span><span class="cl">    <span class="tk-prop">event</span><span class="tk-pun">:</span> <span class="tk-str">"SUST CSE Carnival"</span><span class="tk-pun">,</span></span><span class="cl">    <span class="tk-prop">result</span><span class="tk-pun">:</span> <span class="tk-str">"Top 15 / 724"</span></span><span class="cl">  <span class="tk-pun">},</span></span><span class="cl">  <span class="tk-prop">focus</span><span class="tk-pun">:</span> <span class="tk-pun">[</span><span class="tk-str">"Scalable systems"</span><span class="tk-pun">,</span> <span class="tk-str">"Applied ML"</span><span class="tk-pun">]</span></span><span class="cl"><span class="tk-pun">}</span> <span class="tk-key">satisfies</span> <span class="tk-fn">Developer</span><span class="tk-pun">;</span></span></code></pre>
+                        <div class="codewin-foot">
+                            <span class="badge-row">
+                                <span class="award-badge">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-trophy"/></svg>
+                                    SUST CSE Carnival Finalist
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Tech marquee ===== -->
+        <div class="marquee" aria-hidden="true">
+            <span class="marquee-label">Everyday toolkit</span>
+            <div class="marquee-track" id="marqueeTrack">
+                <div class="marquee-group">
+                    <span>React</span><span>Node.js</span><span>Express</span><span>TypeScript</span><span>Python</span>
+                    <span>PyTorch</span><span>PostgreSQL</span><span>MongoDB</span><span>C++</span><span>Git</span><span>Linux</span>
+                </div>
+                <div class="marquee-group">
+                    <span>React</span><span>Node.js</span><span>Express</span><span>TypeScript</span><span>Python</span>
+                    <span>PyTorch</span><span>PostgreSQL</span><span>MongoDB</span><span>C++</span><span>Git</span><span>Linux</span>
                 </div>
             </div>
         </div>
-    </section>
 
-    <!-- About Section (Preview) -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate software engineer and student at the Institute of Information Technology, University of Dhaka. With hands-on experience in full-stack development, AI/ML, and problem-solving, I love building applications that make a real impact.
-                    </p>
-                    <p>
-                        My interests span across web development, machine learning, IoT systems, and game development. I believe in continuous learning and pushing the boundaries of what's possible with technology.
-                    </p>
-                    <p>
-                        Currently residing at Dr. Muhammad Shahidullah Hall, University of Dhaka, I'm always eager to collaborate on exciting projects and contribute to innovative solutions.
-                    </p>
-                </div>
+        <!-- ===== About ===== -->
+        <section id="about" class="section section--tint">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <div class="section-head reveal">
+                            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>About</span>
+                            <h2 class="section-title">Engineer by training,<br><span class="grad-text">builder by habit</span></h2>
+                        </div>
+                        <div class="prose reveal">
+                            <p>
+                                I'm a Software Engineering undergraduate at the <strong>Institute of Information Technology, University of Dhaka</strong>,
+                                maintaining a <strong>CGPA of 3.66</strong> through five semesters. My day-to-day work sits at the intersection of
+                                web engineering and machine learning — I like the front-end polish <em>and</em> the query that finally makes the query fast.
+                            </p>
+                            <p>
+                                I've shipped seven projects spanning geospatial routing, a PyTorch small language model, a JavaFX point-of-sale
+                                system, algorithm visualisers, game AI, and ESP32-based IoT. Most of them started as coursework and ended up as
+                                things I actually use.
+                            </p>
+                            <p>
+                                Beyond the editor: I <strong>finalist-ed the SUST CSE Carnival hackathon</strong> with my team, placing in the
+                                <strong>top 15 of 724 teams</strong>, organised and evaluated a national scholarship exam for over 1,000
+                                candidates, and volunteered at ITVerse-2023. I'm currently <strong>open for collaboration</strong> on
+                                interesting projects.
+                            </p>
+                        </div>
+                    </div>
 
-                <div class="education-section">
-                    <h3>Education</h3>
-                    <div class="education-item">
-                        <h4>Bachelor of Science in Software Engineering</h4>
-                        <p class="institution">Institute of Information Technology, University of Dhaka</p>
-                        <p class="period">2023 – Present | Expected Graduation: Sep 2027</p>
-                        <p class="achievement">CGPA: 3.58 (up to 3rd semester)</p>
-                    </div>
-                    <div class="education-item">
-                        <h4>Higher Secondary Certificate</h4>
-                        <p class="institution">Adamjee Cantonment College</p>
-                        <p class="period">2022</p>
-                        <p class="achievement">GPA: 5.00</p>
-                    </div>
-                    <div class="education-item">
-                        <h4>Secondary School Certificate</h4>
-                        <p class="institution">Shaistaganj Islami Academy and High School</p>
-                        <p class="period">2020</p>
-                        <p class="achievement">GPA: 5.00</p>
-                    </div>
+                    <aside class="card spot facts reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clipboard"/></svg>
+                            Quick facts
+                        </h3>
+                        <dl>
+                            <div class="fact"><dt>Degree</dt><dd>B.Sc. Software Engineering</dd></div>
+                            <div class="fact"><dt>University</dt><dd>IIT, University of Dhaka</dd></div>
+                            <div class="fact"><dt>CGPA</dt><dd>3.66 / 5.00</dd></div>
+                            <div class="fact"><dt>Graduation</dt><dd>Expected Sep 2027</dd></div>
+                            <div class="fact"><dt>Hall</dt><dd>Dr. M. Shahidullah Hall</dd></div>
+                            <div class="fact"><dt>Based in</dt><dd>Dhaka, Bangladesh</dd></div>
+                            <div class="fact"><dt>Focus areas</dt><dd>Full-Stack · AI/ML · IoT</dd></div>
+                            <div class="fact"><dt>Languages</dt><dd>Bangla · English</dd></div>
+                        </dl>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Content Executive</h3>
-                    <p class="company">ACS</p>
+        <!-- ===== Experience ===== -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Experience</span>
+                    <h2 class="section-title">Work &amp; leadership</h2>
+                    <p class="section-lede">Where I've taken ownership — in an engineering team, an exam hall, and an event floor.</p>
                 </div>
-                <p class="period">Nov 2023 – Mar 2024</p>
-                <p class="experience-description">
-                    Proofread and edited content, created and curated materials, managed multiple projects, and collaborated with teams to execute effective content strategies.
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
+                <div class="timeline reveal-group">
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Software Engineering Intern</h3>
+                            <span class="tl-period">May 2026 — Oct 2026</span>
+                        </div>
+                        <p class="tl-org">KAZ Software</p>
+                        <!-- Replace this with the specifics of your role: tech stack, what you built, who you worked with. -->
+                        <p class="tl-desc">
+                            Software Engineering internship working on production software — contributing to implementation,
+                            testing and delivery alongside the engineering team, and applying the full-stack and problem-solving
+                            skills I've built through coursework and side projects.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="tl-live"><span class="dot" aria-hidden="true"></span>Current</span>
+                            <!-- Add 3-5 real stack tags below, e.g. <span class="chip">React</span> -->
+                        </div>
+                    </article>
+
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Content Executive</h3>
+                            <span class="tl-period">Nov 2023 — Mar 2024</span>
+                        </div>
+                        <p class="tl-org">ACS</p>
+                        <p class="tl-desc">
+                            Proofread and edited content, created and curated materials, managed multiple projects in
+                            parallel, and collaborated with a team to execute effective content strategies end to end.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="chip">Content strategy</span>
+                            <span class="chip">Copy editing</span>
+                            <span class="chip">Project coordination</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Organiser &amp; Evaluator — USAS Scholarship Exam</h3>
+                            <span class="tl-period">1,000+ candidates</span>
+                        </div>
+                        <p class="tl-org">National Scholarship Programme</p>
+                        <p class="tl-desc">
+                            Planned and ran the evaluation pipeline for a national scholarship examination, from
+                            candidate registration and invigilation through to result compilation for over 1,000 participants.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="chip">Leadership</span>
+                            <span class="chip">Evaluation</span>
+                            <span class="chip">Operations</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Volunteer — Events &amp; Hackathons</h3>
+                            <span class="tl-period">ITVerse 2023</span>
+                        </div>
+                        <p class="tl-org">ITVerse 2023</p>
+                        <p class="tl-desc">
+                            Volunteered across event operations and hackathon desks, coordinating teams and on-site logistics
+                            for more than 200 participants.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="chip">Event operations</span>
+                            <span class="chip">Team coordination</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Projects ===== -->
+        <section id="projects" class="section section--tint">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Projects</span>
+                    <h2 class="section-title">Featured work</h2>
+                    <p class="section-lede">Seven builds across geospatial data, language models, game AI and embedded systems — each one taught me something the syllabus didn't.</p>
+                </div>
+
+                <div class="project-grid reveal-group">
+
+                    <article class="card spot project-card reveal">
+                        <div class="project-top">
+                            <span class="project-index">01</span>
+                            <span class="project-kind">Full-Stack</span>
+                        </div>
                         <h3>banRAP</h3>
-                        <p class="tech-stack">React.js • Node.js • PostgreSQL • PostGIS</p>
-                    </div>
-                    <p class="project-description">
-                        Segments roads into 100-meter sections and assigns automated safety star ratings. Offers safer navigation by adjusting routes and travel time based on road conditions.
-                    </p>
-                    <a href="https://github.com/Asad-1515-DU/banRAP" target="_blank" class="project-link">View Repository →</a>
-                </div>
+                        <p>Segments roads into 100-metre sections and assigns automated safety star ratings, then reroutes navigation and travel-time estimates around the riskiest stretches.</p>
+                        <div class="project-tags">
+                            <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">PostgreSQL</span><span class="chip">PostGIS</span>
+                        </div>
+                        <div class="project-foot">
+                            <span class="text-link">View repository <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+                            <span class="links">
+                                <a class="repo-btn" href="https://github.com/Asad-1515-DU/banRAP" target="_blank" rel="noopener" aria-label="banRAP on GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>shopNOW</h3>
-                        <p class="tech-stack">Java • JavaFX • SQLite</p>
-                    </div>
-                    <p class="project-description">
-                        Desktop POS system with product management, inventory tracking, billing, discounts, and receipt generation. Designed with a clean interface for fast and effortless sales tasks.
-                    </p>
-                    <a href="https://github.com/tjadnan1520/shopNOW" target="_blank" class="project-link">View Repository →</a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
+                    <article class="card spot project-card reveal">
+                        <div class="project-top">
+                            <span class="project-index">02</span>
+                            <span class="project-kind">AI / ML</span>
+                        </div>
                         <h3>tellingSTORY</h3>
-                        <p class="tech-stack">PyTorch • Jupyter Notebook</p>
-                    </div>
-                    <p class="project-description">
-                        Built a 15M+ parameter PyTorch SLM with custom tokenization and efficient data pipelines. Trained a Transformer decoder on TinyStory to achieve coherent story generation.
-                    </p>
-                    <a href="https://github.com/tjadnan1520/tellingSTORY" target="_blank" class="project-link">View Repository →</a>
-                </div>
+                        <p>Built a 15M+ parameter PyTorch small language model with custom tokenisation and efficient data pipelines, then trained a Transformer decoder on TinyStories to generate coherent narratives.</p>
+                        <div class="project-tags">
+                            <span class="chip">PyTorch</span><span class="chip">Transformers</span><span class="chip">Jupyter</span>
+                        </div>
+                        <div class="project-foot">
+                            <span class="text-link">View repository <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+                            <span class="links">
+                                <a class="repo-btn" href="https://github.com/tjadnan1520/tellingSTORY" target="_blank" rel="noopener" aria-label="tellingSTORY on GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-header">
+                    <article class="card spot project-card reveal">
+                        <div class="project-top">
+                            <span class="project-index">03</span>
+                            <span class="project-kind">Desktop</span>
+                        </div>
+                        <h3>shopNOW</h3>
+                        <p>A desktop point-of-sale system with product management, inventory tracking, billing, discounts and receipt generation — designed for fast, effortless sales tasks.</p>
+                        <div class="project-tags">
+                            <span class="chip">Java</span><span class="chip">JavaFX</span><span class="chip">SQLite</span>
+                        </div>
+                        <div class="project-foot">
+                            <span class="text-link">View repository <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+                            <span class="links">
+                                <a class="repo-btn" href="https://github.com/tjadnan1520/shopNOW" target="_blank" rel="noopener" aria-label="shopNOW on GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </article>
+
+                    <article class="card spot project-card reveal">
+                        <div class="project-top">
+                            <span class="project-index">04</span>
+                            <span class="project-kind">Algorithms</span>
+                        </div>
                         <h3>mazeGAME</h3>
-                        <p class="tech-stack">C++ • GUI</p>
-                    </div>
-                    <p class="project-description">
-                        Interactive maze game that visualizes BFS, DFS, Dijkstra, and A* in real time. Allows users to see how algorithms behave while solving the maze.
-                    </p>
-                    <a href="https://github.com/tjadnan1520/mazeGAME" target="_blank" class="project-link">View Repository →</a>
-                </div>
+                        <p>An interactive maze game that visualises BFS, DFS, Dijkstra and A* in real time, so you can watch each algorithm think instead of taking its word for it.</p>
+                        <div class="project-tags">
+                            <span class="chip">C++</span><span class="chip">GUI</span><span class="chip">Visualisation</span>
+                        </div>
+                        <div class="project-foot">
+                            <span class="text-link">View repository <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+                            <span class="links">
+                                <a class="repo-btn" href="https://github.com/tjadnan1520/mazeGAME" target="_blank" rel="noopener" aria-label="mazeGAME on GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-header">
+                    <article class="card spot project-card reveal">
+                        <div class="project-top">
+                            <span class="project-index">05</span>
+                            <span class="project-kind">Game AI</span>
+                        </div>
                         <h3>gomokuPRO</h3>
-                        <p class="tech-stack">React.js • Node.js • MongoDB • Express.js</p>
-                    </div>
-                    <p class="project-description">
-                        Web-based Gomoku game with AI using Minimax and alpha–beta pruning. Features a custom evaluation function for smarter AI moves.
-                    </p>
-                    <a href="https://github.com/tjadnan1520/gomokuPRO" target="_blank" class="project-link">View Repository →</a>
-                </div>
+                        <p>A web-based Gomoku game where the opponent plays Minimax with alpha–beta pruning, sharpened by a custom evaluation function for stronger, faster moves.</p>
+                        <div class="project-tags">
+                            <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">MongoDB</span><span class="chip">Express</span>
+                        </div>
+                        <div class="project-foot">
+                            <span class="text-link">View repository <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+                            <span class="links">
+                                <a class="repo-btn" href="https://github.com/tjadnan1520/gomokuPRO" target="_blank" rel="noopener" aria-label="gomokuPRO on GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </article>
 
-                <div class="project-card">
-                    <div class="project-header">
+                    <article class="card spot project-card reveal">
+                        <div class="project-top">
+                            <span class="project-index">06</span>
+                            <span class="project-kind">IoT</span>
+                        </div>
                         <h3>IoT_Project</h3>
-                        <p class="tech-stack">C++ • ESP32</p>
-                    </div>
-                    <p class="project-description">
-                        System to monitor plant conditions and trigger actions like watering based on real-time sensor data. Includes remote monitoring, dashboard interface, and data logging.
-                    </p>
-                    <a href="https://github.com/effazrayhan/IOT_project" target="_blank" class="project-link">View Repository →</a>
+                        <p>An ESP32 system that monitors plant conditions from live sensor data and triggers actions such as watering, with remote monitoring, a dashboard and logged history.</p>
+                        <div class="project-tags">
+                            <span class="chip">C++</span><span class="chip">ESP32</span><span class="chip">Sensors</span>
+                        </div>
+                        <div class="project-foot">
+                            <span class="text-link">View repository <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg></span>
+                            <span class="links">
+                                <a class="repo-btn" href="https://github.com/effazrayhan/IOT_project" target="_blank" rel="noopener" aria-label="IoT_Project on GitHub">
+                                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+                                </a>
+                            </span>
+                        </div>
+                    </article>
+
                 </div>
 
-                <div class="project-card">
-                    <div class="project-header">
-                        <h3>reserveNOW</h3>
-                        <p class="tech-stack">React • Node.js • MongoDB • Express.js</p>
-                    </div>
-                    <p class="project-description">
-                        Food reservation system allowing users to easily reserve their desired meals through a smooth and simple interface.
-                    </p>
-                    <a href="https://github.com/tjadnan1520/reserveNOW" target="_blank" class="project-link">View Repository →</a>
+                <div class="center-action reveal">
+                    <a class="btn btn-ghost" href="projects.html">
+                        View all 7 projects
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                    </a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">HTML</span>
-                        <span class="skill-tag">CSS</span>
-                    </div>
+        <!-- ===== Skills ===== -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Skills</span>
+                    <h2 class="section-title">Technical toolkit</h2>
+                    <p class="section-lede">The languages, frameworks and tools I reach for — grouped by what I actually use them for.</p>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Libraries & Frameworks</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express.js</span>
-                        <span class="skill-tag">PyTorch</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Matplotlib</span>
-                        <span class="skill-tag">Bootstrap</span>
-                    </div>
+                <div class="skills-grid reveal-group">
+                    <article class="card spot skill-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-code"/></svg></span>
+                        <h3>Languages</h3>
+                        <div class="skill-tags">
+                            <span class="chip">C</span><span class="chip">C++</span><span class="chip">Java</span>
+                            <span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">HTML</span><span class="chip">CSS</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot skill-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+                        <h3>Libraries &amp; Frameworks</h3>
+                        <div class="skill-tags">
+                            <span class="chip">React.js</span><span class="chip">Node.js</span><span class="chip">Express.js</span>
+                            <span class="chip">PyTorch</span><span class="chip">Pandas</span><span class="chip">NumPy</span>
+                            <span class="chip">Matplotlib</span><span class="chip">Bootstrap</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot skill-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-db"/></svg></span>
+                        <h3>Databases</h3>
+                        <div class="skill-tags">
+                            <span class="chip">PostgreSQL</span><span class="chip">MongoDB</span><span class="chip">MySQL</span>
+                            <span class="chip">SQLite</span><span class="chip">Oracle</span><span class="chip">PostGIS</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot skill-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-tool"/></svg></span>
+                        <h3>Tools &amp; Platforms</h3>
+                        <div class="skill-tags">
+                            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Linux</span>
+                            <span class="chip">Postman</span><span class="chip">Google Colab</span><span class="chip">Kaggle</span><span class="chip">Canva</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Achievements ===== -->
+        <section id="achievements" class="section section--tint">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Achievements</span>
+                    <h2 class="section-title">Recognition &amp; milestones</h2>
+                    <p class="section-lede">Competitions, workshops and field work that taught me more than any assignment.</p>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">SQLite</span>
-                        <span class="skill-tag">Oracle</span>
-                        <span class="skill-tag">PostGIS</span>
+                <!-- Headline award 1: hackathon finalist -->
+                <article class="card spotlight reveal">
+                    <span class="spotlight-glow" aria-hidden="true"></span>
+                    <div class="spotlight-inner">
+                        <span class="medal" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><use href="#i-trophy"/></svg>
+                        </span>
+                        <div class="spotlight-body">
+                            <p class="ribbon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+                                Flagship achievement
+                            </p>
+                            <h3>Finalist — <span>SUST CSE Carnival</span> Hackathon</h3>
+                            <p>
+                                Competed in the SUST CSE Carnival hackathon and finished in the <strong>top 15 out of 724 teams</strong> —
+                                roughly the top 2%. An intense build sprint against strong competition, and the clearest signal so far that
+                                I work well in a fast-moving team under pressure.
+                            </p>
+                            <div class="rank-stats">
+                                <div class="rank-stat">
+                                    <span class="v">Top 15</span>
+                                    <span class="k">Final ranking</span>
+                                </div>
+                                <div class="rank-stat">
+                                    <span class="v">724</span>
+                                    <span class="k">Teams competing</span>
+                                </div>
+                                <div class="rank-stat">
+                                    <span class="v">~2%</span>
+                                    <span class="k">Of all entries</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </article>
+
+                <!-- Headline award 2: national science quiz runner-up -->
+                <article class="card spotlight spotlight--alt reveal">
+                    <span class="spotlight-glow" aria-hidden="true"></span>
+                    <div class="spotlight-inner">
+                        <span class="medal" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><use href="#i-award"/></svg>
+                        </span>
+                        <div class="spotlight-body">
+                            <p class="ribbon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+                                National competition
+                            </p>
+                            <h3>Runner-up — <span>3rd National Science Quiz</span></h3>
+                            <p>
+                                Placed <strong>second at a national-level science quiz</strong>, competing against teams from across the
+                                country. It was my first real taste of high-stakes competition — recalling material accurately under
+                                pressure, and defending an answer on the spot.
+                            </p>
+                            <div class="rank-stats">
+                                <div class="rank-stat">
+                                    <span class="v">Runner-up</span>
+                                    <span class="k">Final result</span>
+                                </div>
+                                <div class="rank-stat">
+                                    <span class="v">National</span>
+                                    <span class="k">Level of competition</span>
+                                </div>
+                                <div class="rank-stat">
+                                    <span class="v">3rd</span>
+                                    <span class="k">Edition</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="ach-grid reveal-group">
+                    <article class="card spot ach-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-users"/></svg></span>
+                        <div>
+                            <h3>USAS Scholarship Exam — Organiser &amp; Evaluator</h3>
+                            <p>Organised and evaluated the examination for over 1,000 participants nationwide.</p>
+                        </div>
+                    </article>
+
+                    <article class="card spot ach-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-shield"/></svg></span>
+                        <div>
+                            <h3>SAANSO Scout Jamboree — Patrol Leader</h3>
+                            <p>Led a patrol at 10 national and 3 international jamborees.</p>
+                            <span class="meta">Leadership · Outdoor scouting</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot ach-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-flask"/></svg></span>
+                        <div>
+                            <h3>1st S. N. Bose National Science Festival 2025</h3>
+                            <p>Presented a research poster at the inaugural national science festival.</p>
+                            <span class="meta">Research · Poster presentation</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot ach-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+                        <div>
+                            <h3>Building a Small Language Model from Scratch</h3>
+                            <p>Completed a hands-on workshop at BARTA LAB covering tokenisation, training loops and evaluation.</p>
+                            <span class="meta">Workshop · BARTA LAB</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot ach-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+                        <div>
+                            <h3>ITVerse-2023 Volunteer</h3>
+                            <p>Organised events and hackathons on the ground for over 200 participants.</p>
+                            <span class="meta">Volunteering · Event ops</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Contact ===== -->
+        <section id="contact" class="section">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Contact</span>
+                    <h2 class="section-title">Let's build something</h2>
+                    <p class="section-lede">Open to collaborative projects and interesting problems. My inbox is genuinely open.</p>
                 </div>
 
-                <div class="skill-category">
-                    <h3>Tools & Platforms</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">Postman</span>
-                        <span class="skill-tag">Google Colab</span>
-                        <span class="skill-tag">Kaggle</span>
-                        <span class="skill-tag">Canva</span>
+                <div class="contact-grid">
+                    <div class="card contact-card reveal">
+                        <h3>Direct contact</h3>
+                        <p>Fastest way to reach me — I usually reply within a day.</p>
+
+                        <a class="contact-row" href="mailto:bsse1520@iit.du.ac.bd">
+                            <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg></span>
+                            <span class="txt">
+                                <span class="lbl">Email</span>
+                                <span class="val">bsse1520@iit.du.ac.bd</span>
+                            </span>
+                            <span class="copy" data-copy="bsse1520@iit.du.ac.bd" role="button" tabindex="0" aria-label="Copy email address">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-copy"/></svg>
+                            </span>
+                        </a>
+
+                        <a class="contact-row" href="tel:+8801642477845">
+                            <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-phone"/></svg></span>
+                            <span class="txt">
+                                <span class="lbl">Phone</span>
+                                <span class="val">+880 1642 477845</span>
+                            </span>
+                        </a>
+
+                        <a class="contact-row" href="https://maps.google.com/?q=University+of+Dhaka" target="_blank" rel="noopener">
+                            <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-pin"/></svg></span>
+                            <span class="txt">
+                                <span class="lbl">Location</span>
+                                <span class="val">Dr. M. Shahidullah Hall, University of Dhaka</span>
+                            </span>
+                        </a>
+                    </div>
+
+                    <div class="card cta-panel reveal">
+                        <h2>Have an idea, a role, or a hard problem?</h2>
+                        <p>
+                            Whether it's a full-stack build, a machine-learning experiment or an IoT system — I'd love to hear
+                            about it and see where I can help.
+                        </p>
+                        <div class="cta-actions">
+                            <a class="btn btn-primary" href="mailto:bsse1520@iit.du.ac.bd">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>
+                                Send an email
+                            </a>
+                            <a class="btn btn-ghost" href="https://www.linkedin.com/in/tjadnan" target="_blank" rel="noopener">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-linkedin"/></svg>
+                                Connect on LinkedIn
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Achievements Section -->
-    <section id="achievements" class="achievements">
-        <div class="container">
-            <h2 class="section-title">Achievements & Participation</h2>
-            <ul class="achievements-list">
-                <li>Runner-up in 3rd National Science Quiz</li>
-                <li>Organized and evaluated USAS Scholarship exam for over 1000 participants</li>
-                <li>Participated as Patrol Leader at 10 National & 3 International SAANSO Scout Jamboree</li>
-                <li>Participated in 1st S. N. Bose National Science Festival 2025 (Poster Presentation)</li>
-                <li>Participated in the workshop on Building a Small Language Model from Scratch (BARTA LAB)</li>
-                <li>Volunteered at ITVerse-2023 to organize events & hackathons for over 200 participants</li>
-            </ul>
-        </div>
-    </section>
+    </main>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <p class="contact-subtitle">Feel free to reach out to me for collaboration or just a friendly hello!</p>
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h3>Email</h3>
-                    <a href="mailto:bsse1520@iit.du.ac.bd">bsse1520@iit.du.ac.bd</a>
-                </div>
-                <div class="contact-item">
-                    <h3>Phone</h3>
-                    <a href="tel:+8801642477845">+880 1642477845</a>
-                </div>
-                <div class="contact-item">
-                    <h3>Location</h3>
-                    <p>Dr. Muhammad Shahidullah Hall<br>University of Dhaka, Bangladesh</p>
-                </div>
-            </div>
-            <div class="contact-social">
-                <a href="https://github.com/tjadnan1520" target="_blank" class="social-btn">GitHub</a>
-                <a href="https://www.linkedin.com/in/tjadnan" target="_blank" class="social-btn">LinkedIn</a>
-                <a href="mailto:bsse1520@iit.du.ac.bd" class="social-btn">Email</a>
-            </div>
-
-            <!-- References Section -->
-            <div class="references-section">
-                <h2 class="section-title">References</h2>
-                <div class="references-grid">
-                    <div class="reference-card">
-                        <h4>Dr. Ahmedul Kabir</h4>
-                        <p class="reference-title">Associate Professor</p>
-                        <p class="reference-org">IIT, University of Dhaka</p>
-                        <p class="reference-email"><a href="mailto:kabir@iit.du.ac.bd">kabir@iit.du.ac.bd</a></p>
-                    </div>
-                    <div class="reference-card">
-                        <h4>Dr. Armana Huq</h4>
-                        <p class="reference-title">Assistant Professor</p>
-                        <p class="reference-org">Accident Research Institute, BUET</p>
-                        <p class="reference-email"><a href="mailto:ahuq002@fiu.edu">ahuq002@fiu.edu</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- ===== Footer ===== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Tarek Jamil Adnan. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="index.html">
+                        <span class="mark">TJA</span>
+                        <span>Tarek Jamil Adnan<span class="sub">Software Engineer</span></span>
+                    </a>
+                    <p>Software Engineering student at IIT, University of Dhaka — building full-stack applications, machine-learning models and IoT systems.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="index.html#about">About me</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/tjadnan1520" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/tjadnan" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:bsse1520@iit.du.ac.bd">Email</a></li>
+                        <li><a href="tel:+8801642477845">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Tarek Jamil Adnan. All rights reserved.</p>
+                <p class="made">
+                    Built with vanilla HTML, CSS &amp; JS
+                    <span class="heart" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-heart"/></svg></span>
+                </p>
+            </div>
         </div>
     </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>
+        <span id="toastMsg">Copied to clipboard</span>
+    </div>
 
     <script src="script.js"></script>
 </body>

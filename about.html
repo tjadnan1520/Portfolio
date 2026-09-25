@@ -3,84 +3,458 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Tarek Jamil Adnan</title>
+    <title>About — Tarek Jamil Adnan</title>
+    <meta name="description" content="About Tarek Jamil Adnan — Software Engineering student at IIT, University of Dhaka with a CGPA of 3.66. Full-stack developer, AI/ML enthusiast and SUST CSE Carnival hackathon finalist.">
+    <meta name="author" content="Tarek Jamil Adnan">
+    <meta name="theme-color" content="#05070e">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- ===== Icon sprite ===== -->
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+        <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></symbol>
+        <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3.2 6.8 7.6 5.1a2.2 2.2 0 0 0 2.4 0l7.6-5.1"/></symbol>
+        <symbol id="i-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 3h2.9l1.5 4-2 1.5a12.4 12.4 0 0 0 5.5 5.5l1.5-2 4 1.5v2.9a2 2 0 0 1-2.2 2A17.2 17.2 0 0 1 4.6 5.2 2 2 0 0 1 6.6 3z"/></symbol>
+        <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10.2c0 5.8-8 11.8-8 11.8s-8-6-8-11.8a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="2.8"/></symbol>
+        <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3.5h10V9a5 5 0 0 1-10 0z"/><path d="M17 5h2.6a2.6 2.6 0 0 1-2.6 4.6"/><path d="M7 5H4.4A2.6 2.6 0 0 0 7 9.6"/><path d="M12 14v3.2"/><path d="M8.6 21h6.8l-.7-3.8H9.3z"/></symbol>
+        <symbol id="i-award" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="5.4"/><path d="m8.2 13.4-1.4 7.1 5.2-2.7 5.2 2.7-1.4-7.1"/></symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 12h14.5"/><path d="m13 6 6 6-6 6"/></symbol>
+        <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19.5V5"/><path d="m6 11 6-6 6 6"/></symbol>
+        <symbol id="i-arrow-up-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7.2 16.8 16.8 7.2"/><path d="M8.6 7.2h8.2v8.2"/></symbol>
+        <symbol id="i-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="m9.5 5 7 7-7 7"/></symbol>
+        <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m8.4 8.4-4.1 3.6 4.1 3.6"/><path d="m15.6 8.4 4.1 3.6-4.1 3.6"/><path d="m13.6 5-3.2 14"/></symbol>
+        <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="4.6" y="4.6" width="14.8" height="14.8" rx="2.6"/><rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1"/><path d="M9 2v2.6M15 2v2.6M9 19.4V22M15 19.4V22M2 9h2.6M2 15h2.6M19.4 9H22M19.4 15H22"/></symbol>
+        <symbol id="i-db" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.8" rx="7.6" ry="3"/><path d="M4.4 5.8v12.4c0 1.66 3.4 3 7.6 3s7.6-1.34 7.6-3V5.8"/><path d="M4.4 12c0 1.66 3.4 3 7.6 3s7.6-1.34 7.6-3"/></symbol>
+        <symbol id="i-tool" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.6 6.2a4.1 4.1 0 0 1 5.2 5.2l-1.7-1.7-2.2.4-.4-2.2z"/><path d="M17.4 9.4 7.6 19.2a2.2 2.2 0 0 1-3.1-3.1l9.8-9.8"/></symbol>
+        <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.6 8.4 12 4.2l9.4 4.2-9.4 4.2z"/><path d="M6.6 10.4v5c0 1.5 2.4 2.7 5.4 2.7s5.4-1.2 5.4-2.7v-5"/><path d="M21.4 8.4v5.6"/></symbol>
+        <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.2"/><path d="M3.2 20a5.8 5.8 0 0 1 11.6 0"/><path d="M16.4 5.2a3.2 3.2 0 0 1 0 5.9"/><path d="M17.4 14.4A5.8 5.8 0 0 1 20.8 20"/></symbol>
+        <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.6" y="7" width="18.8" height="13" rx="2.5"/><path d="M8.6 7V5.6A2 2 0 0 1 10.6 3.6h2.8a2 2 0 0 1 2 2V7"/><path d="M2.6 12.4h18.8"/></symbol>
+        <symbol id="i-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4.6" width="14" height="15.8" rx="2.2"/><path d="M9 4.6V4a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v.6"/><path d="M9 11h6M9 15h4"/></symbol>
+        <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4.4"/><circle cx="12" cy="12" r=".9"/></symbol>
+        <symbol id="i-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M11 2.2 12.7 8l5.8 1.7-5.8 1.7L11 17.2 9.3 11.4 3.5 9.7 9.3 8z"/><path d="M18.4 13.4 19.3 16l2.6.9-2.6.9-.9 2.6-.9-2.6-2.6-.9 2.6-.9z"/></symbol>
+        <symbol id="i-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.5 4.6 4.6L19 7.5"/></symbol>
+        <symbol id="i-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 20.8S3.2 15.6 3.2 9.9A4.9 4.9 0 0 1 12 6.6a4.9 4.9 0 0 1 8.8 3.3c0 5.7-8.8 10.9-8.8 10.9z"/></symbol>
+    </svg>
+
+    <div class="backdrop" aria-hidden="true">
+        <span class="orb orb--1"></span>
+        <span class="orb orb--2"></span>
+    </div>
+
+    <!-- ===== Navigation ===== -->
+    <nav class="navbar" id="navbar">
         <div class="container">
-            <div class="nav-brand">TJA</div>
+            <a class="nav-brand" href="index.html">
+                <span class="mark">TJA</span>
+                <span>Tarek Jamil Adnan<span class="sub">Software Engineer</span></span>
+            </a>
+
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="education.html">Education</a></li>
                 <li><a href="projects.html">Projects</a></li>
                 <li><a href="skills.html">Skills</a></li>
+                <li><a href="achievements.html">Achievements</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+
+            <div class="nav-actions">
+                <a class="nav-cta" href="contact.html">
+                    Let's talk
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                </a>
+                <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navDrawer">
+                    <span class="bars"><span></span><span></span><span></span></span>
+                </button>
+            </div>
         </div>
+        <span class="nav-progress" id="navProgress" aria-hidden="true"></span>
     </nav>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <p>
-                    I am a software engineering student currently pursuing my BSc in Software Engineering at the Institute of Information Technology, University of Dhaka. I am passionate about technology and actively learning full-stack development, with a strong interest in AI/ML.
-                </p>
-                <p>
-                    Currently residing at Dr. Muhammad Shahidullah Hall, University of Dhaka, I'm always eager to collaborate on exciting projects and contribute to innovative solutions.
-                </p>
-            </div>
+    <div class="nav-backdrop" id="navBackdrop" hidden></div>
+    <aside class="nav-drawer" id="navDrawer" aria-label="Mobile navigation" aria-hidden="true">
+        <p class="drawer-title">Navigate</p>
+        <ul>
+            <li><a href="index.html">Home <span class="num">01</span></a></li>
+            <li><a href="about.html">About <span class="num">02</span></a></li>
+            <li><a href="education.html">Education <span class="num">03</span></a></li>
+            <li><a href="projects.html">Projects <span class="num">04</span></a></li>
+            <li><a href="skills.html">Skills <span class="num">05</span></a></li>
+            <li><a href="achievements.html">Achievements <span class="num">06</span></a></li>
+            <li><a href="contact.html">Contact <span class="num">07</span></a></li>
+        </ul>
+        <div class="drawer-foot">
+            <a class="icon-btn" href="https://github.com/tjadnan1520" target="_blank" rel="noopener" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-github"/></svg>
+            </a>
+            <a class="icon-btn" href="https://www.linkedin.com/in/tjadnan" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-linkedin"/></svg>
+            </a>
+            <a class="icon-btn" href="mailto:bsse1520@iit.du.ac.bd" aria-label="Email">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>
+            </a>
         </div>
-    </section>
+    </aside>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience">
-        <div class="container">
-            <h2 class="section-title">Work Experience</h2>
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Content Executive</h3>
-                    <p class="company">ACS</p>
+    <main id="main">
+
+        <!-- ===== Page hero ===== -->
+        <section class="page-hero">
+            <div class="container">
+                <nav class="breadcrumb reveal" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a>
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-chevron-right"/></svg>
+                    <span>About</span>
+                </nav>
+                <h1 class="hero-title reveal">A little about <span class="grad-text">who I am</span></h1>
+                <p class="section-lede reveal">
+                    Software Engineering undergraduate at the Institute of Information Technology, University of Dhaka —
+                    I build full-stack products, train models from scratch, and care a lot about the craft in between.
+                </p>
+
+                <div class="mini-stats reveal">
+                    <div>
+                        <span class="v"><span data-count="3.66" data-decimals="2">3.66</span></span>
+                        <span class="k">CGPA / 5.00</span>
+                    </div>
+                    <div>
+                        <span class="v"><span data-count="7">7</span></span>
+                        <span class="k">Projects shipped</span>
+                    </div>
+                    <div>
+                        <span class="v">Top 15</span>
+                        <span class="k">of 724 hackathon teams</span>
+                    </div>
                 </div>
-                <p class="period">Nov 2023 – Mar 2024</p>
-                <p class="experience-description">
-                    Proofread and edited content, created and curated materials, managed multiple projects, and collaborated with teams to execute effective content strategies.
-                </p>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Social Links Section -->
-    <section id="social" class="social-section">
-        <div class="container">
-            <h2 class="section-title">Connect With Me</h2>
-            <div class="social-links">
-                <a href="https://github.com/tjadnan1520" target="_blank" class="social-link">
-                    <span class="social-icon">🔗</span>
-                    GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/tjadnan" target="_blank" class="social-link">
-                    <span class="social-icon">💼</span>
-                    LinkedIn
-                </a>
-                <a href="mailto:bsse1520@iit.du.ac.bd" class="social-link">
-                    <span class="social-icon">✉️</span>
-                    Email
-                </a>
+        <!-- ===== Who I am ===== -->
+        <section class="section section--tint">
+            <div class="container">
+                <div class="about-grid">
+                    <div>
+                        <div class="section-head reveal">
+                            <span class="eyebrow"><span class="dot" aria-hidden="true"></span>The short version</span>
+                            <h2 class="section-title">Engineer by training,<br><span class="grad-text">builder by habit</span></h2>
+                        </div>
+                        <div class="prose reveal">
+                            <p>
+                                I'm a Software Engineering undergraduate at the <strong>Institute of Information Technology,
+                                University of Dhaka</strong>, holding a <strong>CGPA of 3.66</strong> across five completed
+                                semesters. I live on campus at Dr. Muhammad Shahidullah Hall.
+                            </p>
+                            <p>
+                                My work sits where <strong>web engineering</strong> meets <strong>machine learning</strong>. I enjoy
+                                the full arc of a product — modelling the data, writing the API, tuning the query plan, and then
+                                fighting CSS until the thing actually feels good to use. Seven projects later, that range still
+                                excites me more than any single layer.
+                            </p>
+                            <p>
+                                Outside coursework the two results I'm proudest of are competitive: <strong>finalisting the SUST CSE
+                                Carnival hackathon</strong> in the <strong>top 15 of 724 teams</strong>, and taking <strong>runner-up
+                                at the 3rd National Science Quiz</strong> against competitors from across the country.
+                            </p>
+                            <p>
+                                I've also organised and evaluated a national scholarship exam for over 1,000 candidates, presented a
+                                poster at the 1st S. N. Bose National Science Festival, and led a scout patrol across 10 national and
+                                3 international jamborees.
+                            </p>
+                            <p>
+                                I'm currently a <strong>Software Engineering Intern at KAZ Software</strong> (May–Oct 2026), and open to
+                                collaborations on anything involving full-stack systems, applied ML, or IoT.
+                            </p>
+                        </div>
+                    </div>
+
+                    <aside class="card spot facts reveal">
+                        <h3>
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-clipboard"/></svg>
+                            Quick facts
+                        </h3>
+                        <dl>
+                            <div class="fact"><dt>Name</dt><dd>Tarek Jamil Adnan</dd></div>
+                            <div class="fact"><dt>Degree</dt><dd>B.Sc. Software Engineering</dd></div>
+                            <div class="fact"><dt>University</dt><dd>IIT, University of Dhaka</dd></div>
+                            <div class="fact"><dt>CGPA</dt><dd>3.66 / 5.00</dd></div>
+                            <div class="fact"><dt>Graduation</dt><dd>Expected Sep 2027</dd></div>
+                            <div class="fact"><dt>Residence</dt><dd>Dr. M. Shahidullah Hall</dd></div>
+                            <div class="fact"><dt>Based in</dt><dd>Dhaka, Bangladesh</dd></div>
+                            <div class="fact"><dt>Interests</dt><dd>Full-Stack · AI/ML · IoT · Game Dev</dd></div>
+                            <div class="fact"><dt>Languages</dt><dd>Bangla · English</dd></div>
+                        </dl>
+                    </aside>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <!-- ===== How I work ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>How I work</span>
+                    <h2 class="section-title">Principles I build by</h2>
+                    <p class="section-lede">Three habits that show up in every repo I've written.</p>
+                </div>
+
+                <div class="value-grid reveal-group">
+                    <article class="card spot value-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-target"/></svg></span>
+                        <h3>Understand before building</h3>
+                        <p>I write down the actual problem before touching a framework. Most of the time the hard part isn't the code — it's the model of the problem.</p>
+                    </article>
+                    <article class="card spot value-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-code"/></svg></span>
+                        <h3>Ship something that runs</h3>
+                        <p>A half-finished idea teaches nothing. Every project I list here is code that actually runs, with a README and instructions you can follow.</p>
+                    </article>
+                    <article class="card spot value-card reveal">
+                        <span class="icon-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-users"/></svg></span>
+                        <h3>Good work is team work</h3>
+                        <p>My strongest results came from teams under time pressure — 724-team hackathons, 1,000-candidate exam halls, and event floors with 200 people.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section class="section section--tint">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Experience</span>
+                    <h2 class="section-title">Work &amp; leadership</h2>
+                    <p class="section-lede">Taking ownership in an engineering team, an exam hall, and on an event floor.</p>
+                </div>
+
+                <div class="timeline reveal-group">
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Software Engineering Intern</h3>
+                            <span class="tl-period">May 2026 — Oct 2026</span>
+                        </div>
+                        <p class="tl-org">KAZ Software</p>
+                        <!-- Replace this with the specifics of your role: tech stack, what you built, who you worked with. -->
+                        <p class="tl-desc">
+                            Software Engineering internship working on production software — contributing to implementation, testing
+                            and delivery alongside the engineering team, and applying the full-stack and problem-solving skills
+                            I've built through coursework and side projects.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="tl-live"><span class="dot" aria-hidden="true"></span>Current</span>
+                            <!-- Add 3-5 real stack tags below, e.g. <span class="chip">React</span> -->
+                        </div>
+                    </article>
+
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Content Executive</h3>
+                            <span class="tl-period">Nov 2023 — Mar 2024</span>
+                        </div>
+                        <p class="tl-org">ACS</p>
+                        <p class="tl-desc">
+                            Proofread and edited content, created and curated materials, managed multiple projects in
+                            parallel, and collaborated with a team to execute effective content strategies end to end.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="chip">Content strategy</span>
+                            <span class="chip">Copy editing</span>
+                            <span class="chip">Project coordination</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Organiser &amp; Evaluator — USAS Scholarship Exam</h3>
+                            <span class="tl-period">1,000+ candidates</span>
+                        </div>
+                        <p class="tl-org">National Scholarship Programme</p>
+                        <p class="tl-desc">
+                            Planned and ran the evaluation pipeline for a national scholarship examination, from candidate
+                            registration and invigilation through to result compilation for over 1,000 participants.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="chip">Leadership</span>
+                            <span class="chip">Evaluation</span>
+                            <span class="chip">Operations</span>
+                        </div>
+                    </article>
+
+                    <article class="card spot tl-item reveal">
+                        <div class="tl-top">
+                            <h3>Volunteer — Events &amp; Hackathons</h3>
+                            <span class="tl-period">ITVerse 2023</span>
+                        </div>
+                        <p class="tl-org">ITVerse 2023</p>
+                        <p class="tl-desc">
+                            Volunteered across event operations and hackathon desks, coordinating teams and on-site logistics
+                            for more than 200 participants.
+                        </p>
+                        <div class="tl-tags">
+                            <span class="chip">Event operations</span>
+                            <span class="chip">Team coordination</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== Achievement teaser ===== -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head section-head--center reveal">
+                    <span class="eyebrow"><span class="dot" aria-hidden="true"></span>Headline achievements</span>
+                    <h2 class="section-title">Where I've placed</h2>
+                    <p class="section-lede">Two results I'm proudest of — one on the field, one in an exam hall.</p>
+                </div>
+
+                <article class="card spotlight reveal">
+                    <span class="spotlight-glow" aria-hidden="true"></span>
+                    <div class="spotlight-inner">
+                        <span class="medal" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><use href="#i-trophy"/></svg>
+                        </span>
+                        <div class="spotlight-body">
+                            <p class="ribbon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+                                SUST CSE Carnival
+                            </p>
+                            <h3>Finalist — <span>Top 15 of 724 teams</span></h3>
+                            <p>
+                                Competed in the SUST CSE Carnival hackathon and finished in the <strong>top 15 out of 724 teams</strong> —
+                                roughly the top 2%. A build sprint against serious competition, and the best proof I have that I
+                                work well in a fast-moving team.
+                            </p>
+                            <div class="rank-stats">
+                                <div class="rank-stat"><span class="v">Top 15</span><span class="k">Final ranking</span></div>
+                                <div class="rank-stat"><span class="v">724</span><span class="k">Teams competing</span></div>
+                                <div class="rank-stat"><span class="v">~2%</span><span class="k">Of all entries</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="card spotlight spotlight--alt reveal">
+                    <span class="spotlight-glow" aria-hidden="true"></span>
+                    <div class="spotlight-inner">
+                        <span class="medal" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><use href="#i-award"/></svg>
+                        </span>
+                        <div class="spotlight-body">
+                            <p class="ribbon">
+                                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-sparkle"/></svg>
+                                National competition
+                            </p>
+                            <h3>Runner-up — <span>3rd National Science Quiz</span></h3>
+                            <p>
+                                Placed <strong>second at a national-level science quiz</strong> against teams from across the country —
+                                recalling material accurately under pressure and defending an answer on the spot. My first real
+                                taste of high-stakes competition.
+                            </p>
+                            <div class="rank-stats">
+                                <div class="rank-stat"><span class="v">Runner-up</span><span class="k">Final result</span></div>
+                                <div class="rank-stat"><span class="v">National</span><span class="k">Level of competition</span></div>
+                                <div class="rank-stat"><span class="v">3rd</span><span class="k">Edition</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <div class="center-action reveal">
+                    <a class="btn btn-ghost" href="achievements.html">
+                        See all achievements
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CTA ===== -->
+        <section class="section section--tint cta-strip">
+            <div class="container">
+                <h2 class="reveal">Want the <span class="grad-text">longer version</span>?</h2>
+                <p class="reveal">Have a look at the projects I've built, or just say hello — I'm always up for a good technical conversation.</p>
+                <div class="cta-actions reveal">
+                    <a class="btn btn-primary" href="projects.html">
+                        Browse projects
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-right"/></svg>
+                    </a>
+                    <a class="btn btn-ghost" href="contact.html">
+                        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-mail"/></svg>
+                        Contact me
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== Footer ===== -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 Tarek Jamil Adnan. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="nav-brand" href="index.html">
+                        <span class="mark">TJA</span>
+                        <span>Tarek Jamil Adnan<span class="sub">Software Engineer</span></span>
+                    </a>
+                    <p>Software Engineering student at IIT, University of Dhaka — building full-stack applications, machine-learning models and IoT systems.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Pages</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="education.html">Education</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="skills.html">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>More</h4>
+                    <ul>
+                        <li><a href="achievements.html">Achievements</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="index.html#experience">Experience</a></li>
+                        <li><a href="index.html#skills">Skills</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/tjadnan1520" target="_blank" rel="noopener">GitHub</a></li>
+                        <li><a href="https://www.linkedin.com/in/tjadnan" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="mailto:bsse1520@iit.du.ac.bd">Email</a></li>
+                        <li><a href="tel:+8801642477845">Phone</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year">2026</span> Tarek Jamil Adnan. All rights reserved.</p>
+                <p class="made">
+                    Built with vanilla HTML, CSS &amp; JS
+                    <span class="heart" aria-hidden="true"><svg viewBox="0 0 24 24" width="14" height="14"><use href="#i-heart"/></svg></span>
+                </p>
+            </div>
         </div>
     </footer>
+
+    <button class="to-top" id="toTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow-up"/></svg>
+    </button>
+
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-check"/></svg>
+        <span id="toastMsg">Copied to clipboard</span>
+    </div>
 
     <script src="script.js"></script>
 </body>
